@@ -1,0 +1,2 @@
+rootProject.name='MiaBhai Admin'
+include ':app'
