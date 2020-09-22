@@ -17,6 +17,15 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="77dp"
+            android:src="@mipmap/logo" />
+
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_alignParentBottom="true"

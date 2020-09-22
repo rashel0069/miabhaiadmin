@@ -1,9 +1,287 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
     tools:context=".Activity.MemberRegisration">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <LinearLayout
+          android:weightSum="2"
+          android:background="@drawable/buttonback"
+          android:padding="5dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <LinearLayout
+              android:layout_weight="1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="40dp"
+                  android:gravity="center_vertical"
+                  android:textColor="@color/black"
+                  android:text="Date: "/>
+              <TextView
+                  android:layout_marginLeft="5dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="40dp"
+                  android:textColor="@color/black"
+                  android:gravity="center_vertical"
+                  android:hint="29-09-2020"/>
+          </LinearLayout>
+          <LinearLayout
+              android:layout_weight="1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="40dp"
+                  android:textColor="@color/black"
+                  android:gravity="center_vertical"
+                  android:text="Member ID: "/>
+              <EditText
+                  android:layout_marginLeft="5dp"
+                  android:background="?attr/selectableItemBackground"
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:textColor="@color/black"
+                  android:gravity="center_vertical"
+                  android:hint="20091000"/>
+          </LinearLayout>
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_marginTop="3dp"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:background="@drawable/edittextback"
+          android:layout_height="40dp">
+          <TextView
+              android:padding="5dp"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:textColor="@color/colorPrimaryDark"
+              android:gravity="center_vertical"
+              android:text="Member Name:"/>
+          <EditText
+              android:layout_marginLeft="5dp"
+              android:background="?attr/selectableItemBackground"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:textColor="@color/black"
+              android:gravity="center_vertical"
+              android:hint="Enter father's name"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_marginTop="3dp"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:background="@drawable/edittextback"
+          android:layout_height="40dp">
+          <TextView
+              android:padding="5dp"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:textColor="@color/colorPrimaryDark"
+              android:gravity="center_vertical"
+              android:text="@string/father_s_name"/>
+          <EditText
+              android:layout_marginLeft="5dp"
+              android:background="?attr/selectableItemBackground"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:textColor="@color/black"
+              android:gravity="center_vertical"
+              android:hint="Enter father's name"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_marginTop="2dp"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:background="@drawable/edittextback"
+          android:layout_height="40dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:padding="5dp"
+              android:textColor="@color/colorPrimaryDark"
+              android:gravity="center_vertical"
+              android:text="@string/mother_s_name"/>
+          <EditText
+              android:layout_marginLeft="5dp"
+              android:background="?attr/selectableItemBackground"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:textColor="@color/black"
+              android:gravity="center_vertical"
+              android:hint="Enter mother's name"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_marginTop="2dp"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:background="@drawable/edittextback"
+          android:layout_height="40dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:padding="5dp"
+              android:textColor="@color/colorPrimaryDark"
+              android:gravity="center_vertical"
+              android:text="Mobile No:"/>
+          <EditText
+              android:layout_marginLeft="5dp"
+              android:background="?attr/selectableItemBackground"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:textColor="@color/black"
+              android:gravity="center_vertical"
+              android:hint="+880***********"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_marginTop="2dp"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:background="@drawable/edittextback"
+          android:layout_height="40dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:padding="5dp"
+              android:textColor="@color/colorPrimaryDark"
+              android:gravity="center_vertical"
+              android:text="NID/Birth Reg No:"/>
+          <EditText
+              android:layout_marginLeft="5dp"
+              android:background="?attr/selectableItemBackground"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:textColor="@color/black"
+              android:gravity="center_vertical"
+              android:hint="19781******892456"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_marginTop="2dp"
+          android:weightSum="2"
+          android:background="@drawable/edittextback"
+
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <LinearLayout
+              android:layout_weight="1"
+              android:layout_marginLeft="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="40dp"
+                  android:gravity="center_vertical"
+                  android:textColor="@color/colorPrimaryDark"
+                  android:text="Religion: "/>
+
+              <androidx.appcompat.widget.AppCompatSpinner
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:layout_marginLeft="5dp"
+                  android:entries="@array/Religion"
+                  android:gravity="center_vertical"
+                  android:hint="29-09-2020"
+                  android:spinnerMode="dropdown"
+                  android:textColor="@color/black" />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_weight="1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="40dp"
+                  android:textColor="@color/colorPrimaryDark"
+                  android:gravity="center_vertical"
+                  android:text="Blood Group:"/>
+              <EditText
+                  android:layout_marginLeft="5dp"
+                  android:background="?attr/selectableItemBackground"
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:textColor="@color/black"
+                  android:gravity="center"
+                  android:hint="AB+"/>
+          </LinearLayout>
+
+      </LinearLayout>
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_marginTop="2dp"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:background="@drawable/edittextback"
+          android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:padding="5dp"
+              android:textColor="@color/colorPrimaryDark"
+              android:gravity="center_vertical"
+              android:text="Present Address:"/>
+          <EditText
+              android:layout_marginLeft="5dp"
+              android:background="?attr/selectableItemBackground"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:maxLines="4"
+              android:layout_marginBottom="5dp"
+              android:textColor="@color/black"
+              android:gravity="center_vertical"
+              android:hint="House No/State/City"/>
+      </LinearLayout>
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_marginTop="2dp"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:background="@drawable/edittextback"
+          android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:padding="5dp"
+              android:textColor="@color/colorPrimaryDark"
+              android:gravity="center_vertical"
+              android:text="Permanent Address:"/>
+          <EditText
+              android:layout_marginLeft="5dp"
+              android:background="?attr/selectableItemBackground"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:maxLines="4"
+              android:layout_marginBottom="5dp"
+              android:textColor="@color/black"
+              android:gravity="center_vertical"
+              android:hint="Village/Post office/City"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_gravity="end"
+          android:background="@drawable/buttonback"
+          android:layout_width="wrap_content"
+          android:layout_height="40dp">
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:background="?attr/selectableItemBackgroundBorderless"
+              android:text="Save"/>
+      </LinearLayout>
+  </LinearLayout>
+
+</ScrollView>

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
     Button loginadmin;
     String name = "miabhaiadmin";
     String pass = "admin2020";
+    boolean doubleBackpress = false;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,5 +49,21 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         } );
+
+    }
+    @Override
+    public void onBackPressed() {
+        if(doubleBackpress){
+            super.onBackPressed();
+            return;
+        }
+        this.doubleBackpress = true;
+        Toast.makeText( this, "Please click back Again to Exit", Toast.LENGTH_SHORT ).show();
+        new Handler( ).postDelayed( new Runnable() {
+            @Override
+            public void run() {
+                doubleBackpress = false;
+            }
+        },2000 );
     }
 }

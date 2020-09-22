@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MiaBhai Admin</string>
+    <string name="father_s_name">Father\'s Name: </string>
+    <string name="mother_s_name">Mother\'s Name: </string>
+
+    <string-array name="Religion">
+        <item>Select One</item>
+        <item>Islam</item>
+        <item>Hindu</item>
+        <item>Buddhis</item>
+        <item>Christian</item>
+        <item>Others</item>
+    </string-array>
 </resources>
